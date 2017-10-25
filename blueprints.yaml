@@ -1,0 +1,35 @@
+name: Shortcode GPT
+version: 0.1.0
+description: Provides a Google Publisher Tag shortcode
+icon: code
+author:
+  name: Jeremy Bouquain
+  email: dev@utagawavtt.com
+homepage: https://github.com/keosion/grav-plugin-shortcode-gpt
+keywords: grav, plugin, google, gpt
+bugs: https://github.com/keosion/grav-plugin-shortcode-gpt/issues
+docs: https://github.com/keosion/grav-plugin-shortcode-gpt/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - shortcode-core
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    cssClasses:
+      type:                     text
+      size:                     large
+      label:                    CSS classes (space separated)
+      validate:
+        type:                   string

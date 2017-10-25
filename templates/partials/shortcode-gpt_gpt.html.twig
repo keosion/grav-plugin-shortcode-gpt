@@ -1,0 +1,20 @@
+
+<div id='{{ gpt_id }}' style='width:{{ gpt_width }}px; height:{{ gpt_height }}px;' class="reclameContainer {{ gpt_classes }}">
+    <script type='text/javascript'>
+        // if gpt.js is not in head, global variable may not be defined
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        var gravShortcodeGptQueue = gravShortcodeGptQueue || [];
+
+        // add slot definition for this ad
+        googletag.cmd.push(function() {
+            googletag.defineSlot(
+                '{{ gpt_slot }}',
+                [{{ gpt_width }}, {{ gpt_height }}],
+                '{{ gpt_id }}'
+            ).addService(googletag.pubads());
+        });
+        // add this ad's id to queue to display it later
+        gravShortcodeGptQueue.push('{{ gpt_id }}');
+    </script>
+</div>

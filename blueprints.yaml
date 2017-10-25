@@ -8,7 +8,7 @@ author:
 homepage: https://github.com/keosion/grav-plugin-shortcode-gpt
 keywords: grav, plugin, google, gpt
 bugs: https://github.com/keosion/grav-plugin-shortcode-gpt/issues
-docs: https://github.com/keosion/grav-plugin-shortcode-gpt/blob/develop/README.md
+docs: https://github.com/keosion/grav-plugin-shortcode-gpt/blob/master/README.md
 license: MIT
 
 dependencies:
